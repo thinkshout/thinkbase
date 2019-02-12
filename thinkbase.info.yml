@@ -12,7 +12,5 @@ base theme: classy
 regions:
   secondary_nav: Secondary Nav
   primary_nav: Primary Nav
-  aside: Aside
-  banner: Banner
   content: Content
   footer: Footer
