@@ -16,7 +16,7 @@ This project uses Browsersync, Sass and Browserify
 For a full writeup on this theme see the blog post, 
 [The 2017 ThinkShout Front-End Stack](https://bit.ly/2Iq6Xop)
 
-## Sass Files
+## Sass Files and Structure
 **Config** - these files consists of tools that are used globally throughout the
 site:
 * `_01.vars.scss` - contains global sass variables such as colors, fonts, 
@@ -30,6 +30,20 @@ paragraph tags, lists, and wysiwyg elements.
 file.
 * `06.forms.scss` - the same can be said for buttons as can be said for forms.
 
+**Layout** - these files serve to create a framework for the site to be built 
+upon:
+* `_page.scss` - this is where the layout is established. This includes the 
+grid, [visual grid helper](https://bit.ly/2Sz9Kpi), non-grid tools (.container 
+and .content-side-padding), and establishing the outer limits of the site width.
+* `_vertical-spacing.scss` - our designers plan their elements with consistent
+ vertical spacing. This is why this file has been created. See the comments in 
+ the file itself for a better understanding.
+ 
+**Components** - this is where the bulk of the theming work takes place. For 
+example, the `global` directory is where all the globally shared files ought to 
+go. Directories and files are to be organized by component being worked on. 
+Additional directories can be but are not limited to: `blocks`, `heroes`, 
+`nodes`, `paragraphs`, and `views`. 
 
 ## Fonts (ToDo: Add project fonts here)
 
