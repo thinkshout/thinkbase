@@ -1,12 +1,11 @@
-//-- VENDOR
-@import 'lib/bourbon/bourbon';
-@import 'lib/neat/neat';
+/* VENDOR */
 
-//-- CONFIG
+/* CONFIG */
 @import 'config/*';
 
-//-- LAYOUT
+/* LAYOUT */
 @import 'layout/*';
 
 //-- COMPONENTS
 @import 'components/*';
+@import 'components/*/*';

@@ -193,9 +193,9 @@ All of these mixins can be found in the
 [`_02.mixins.scss`](https://bit.ly/2DhfVVm).
 
 
-## Vertical Padding
-Check out the [`layout/_paragraph-spacing.scss`](https://bit.ly/2Q1Wt74) for a 
-full description indicating options for global vertical padding.
+## Vertical Spacing
+Check out the [`layout/_vertical-spacing.scss`](https://bit.ly/2Q1Wt74) for a 
+full description indicating options for global vertical spacing.
 
  
 ## Background Images
