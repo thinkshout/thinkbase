@@ -238,7 +238,29 @@ template. Example:
 </div>
 ```
 
-## Making accessible clickable cards
+## Accessibility
+
+### Mixins
+**Font and Line Height** - this helps make text zoom-friendly. For example, if the 
+`$baseFontSize` is set to 16px, `@include font-line-height(20, 28);` will set 
+the `font-size` of the element to `1.25rem` and apply the correct ratio for the 
+`line-height` like so: `line-height: (28/20)` (also represented as 
+`line-height: 1.75`). 
+
+**Combined Active, Focus, and Hover States** - if a hover state is themed, 
+chances are the focus and active states ought to be themed the same. Here's a 
+mixin to assist with that.
+`@include hocus {
+  // Insert styles here
+}
+`
+
+**Hide** - often we are tasked with replacing text with an image. This mixin 
+allows us to hide the text while still leaving it accessible for screenreaders 
+and other web accessible tools. Example: `@include hide;`
+
+
+### Making accessible clickable cards
 
 This theme provides Javascript which allows you to proxy clicks between
 children of a parent element.
