@@ -16,6 +16,21 @@ This project uses Browsersync, Sass and Browserify
 For a full writeup on this theme see the blog post, 
 [The 2017 ThinkShout Front-End Stack](https://bit.ly/2Iq6Xop)
 
+## Sass Files
+**Config** - these files consists of tools that are used globally throughout the
+site:
+* `_01.vars.scss` - contains global sass variables such as colors, fonts, 
+breakpoints, grid and layout specs.
+* `_02.mixins.scss` - contains our TS library of common project mixins.
+* `_03.extends.scss` - global extends go here. Use sparingly as they can be 
+heavy.
+* `_04.base.scss` - contains much of the text related styling, such as headers,
+paragraph tags, lists, and wysiwyg elements.
+* `_05.buttons.scss` - global button styling can get complex, so it got its own
+file.
+* `06.forms.scss` - the same can be said for buttons as can be said for forms.
+
+
 ## Fonts (ToDo: Add project fonts here)
 
 We are using three custom fonts under one umbrella font called Halyard:
