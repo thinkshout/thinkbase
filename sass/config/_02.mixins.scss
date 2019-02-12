@@ -51,12 +51,13 @@
 // Fonts and accessible line-heights. Apply the $size (font-size) and
 // $line-height values from the designs here (in px). $baseFontSize is the
 // base font-size assigned for this project.
-@mixin font-line-height($font-size: $base-font-size, $line-height: 20, $base-font-size) {
-  $font-size-px: $font-size + px;
-  $base-font-size-px: $base-font-size + px;
-  font-size: calc(#{$font-size-px} / #{$base-font-size-px}) * 1rem;
-  line-height: calc(#{$line-height} / #{$font-size-px});
+@mixin font-line-height($font-size: $base-font-size, $line-height: 20) {
+  $font-size-px: $font-size * 1px;
+  $base-font-size-px: $base-font-size * 1px;
+  font-size: ($font-size-px / $base-font-size-px) * 1rem;
+  line-height: ($line-height / $font-size);
 }
+
 
 /* GRID */
 
