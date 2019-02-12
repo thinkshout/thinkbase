@@ -1,6 +1,7 @@
 /***
  * @file
  * VARIABLES - See theme Readme for more details.
+ * ToDo: Change the values for these variables as they relate to your project.
  */
 
 /* COLORS */
@@ -10,15 +11,14 @@ $white: #ffffff;
 $light-grey: #EDEDED; // Color used in the side margins when viewing on xxl screens.
 $light-gray: $light-grey;
 
-/**
- * Base Font Size
- */
+
+/* FONTS */
+
+// Base Font Size
 $base-font-size: 16;
 
 
-/**
- * Breakpoints
- */
+/* BREAKPOINTS */
 
 // Small screen / phone
 $sm: 0;
@@ -33,7 +33,8 @@ $xl: 1442px;
 // Double Extra large screens / wide monitor
 $xxl: 2000px;
 
-// Grid settings
+
+/* GRID */
 $grid-max-width: 1260px; // Where the content begins and ends for desktops.
 $grid-max-width-xxl: 1575px; // Where the content begins and ends for xl screens.
 $site-max-width: 2000px; // Where the site begins and ends regardless of larger screens.
@@ -45,9 +46,8 @@ $grid-gutter-double: $grid-gutter * 2;
 $grid-columns-mobile: 4;
 $grid-columns: 12;
 
-/**
- * Misc.
- */
+
+/* MISC. */
 
 // Transitions
 $transition-defaults: 0.2s linear;
