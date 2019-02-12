@@ -14,3 +14,11 @@ regions:
   primary_nav: Primary Nav
   content: Content
   footer: Footer
+
+component-libraries:
+  ts_custom:
+    paths:
+      - templates/ts_custom
+
+ckeditor_stylesheets:
+  - css/style.css
