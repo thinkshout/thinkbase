@@ -13,8 +13,7 @@
 
 
 /* PX TO REM CONVERSION */
-$baseFontSize: 16;
-@function rem($pixels, $context: $baseFontSize) {
+@function rem($pixels, $context: $base-font-size) {
   @if (unitless($pixels)) { $pixels: $pixels * 1px; }
   @if (unitless($context)) { $context: $context * 1px; }
   @return $pixels / $context * 1rem;
@@ -52,11 +51,11 @@ $baseFontSize: 16;
 // Fonts and accessible line-heights. Apply the $size (font-size) and
 // $line-height values from the designs here (in px). $baseFontSize is the
 // base font-size assigned for this project.
-@mixin font-line-height($fontSize: $baseFontSize, $lineHeight: 20, $baseFontSize) {
-  $fontSizePx: $fontSize + px;
-  $baseFontSizePx: $baseFontSize + px;
-  font-size: calc(#{$fontSizePx} / #{$baseFontSizePx}) * 1rem;
-  line-height: calc(#{$lineHeight} / #{$fontSize});
+@mixin font-line-height($font-size: $base-font-size, $line-height: 20, $base-font-size) {
+  $font-size-px: $font-size + px;
+  $base-font-size-px: $base-font-size + px;
+  font-size: calc(#{$font-size-px} / #{$base-font-size-px}) * 1rem;
+  line-height: calc(#{$line-height} / #{$font-size-px});
 }
 
 /* GRID */
