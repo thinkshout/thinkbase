@@ -40,9 +40,22 @@
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
+    <!-- Grid Layout Checker -->
+    {% if show_grid %}
+      {% include '@ts_custom/ts-grid-checker.html.twig' %}
+    {% endif %}
+    <!-- END Grid Layout Checker -->
+
     <a href="#main-content" class="visually-hidden focusable skip-link">
       {{ 'Skip to main content'|t }}
     </a>
+
+    <div id="accessibility-url">
+      <a href="/accessibility" aria-label="{{ 'Report accessibility issues'|t }}" class="visually-hidden focusable skip-link">
+		    {{ 'Accessibility'|t }}
+      </a>
+    </div>
+
     {{ page_top }}
     {{ page }}
     {{ page_bottom }}
