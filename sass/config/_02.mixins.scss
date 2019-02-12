@@ -1,17 +1,18 @@
-// See theme Readme for more details.
-
 /***
- * Media queries
+ * @file
+ * MIXINS - See theme Readme for more details.
  */
+
+
+/* MEDIA QUERIES */
 @mixin mq($query) {
   @media (min-width: rem($query)) {
     @content;
   }
 }
 
-/***
- * px to rems - this is a safeguard since Bourbon is deprecating rems and ems.
- */
+
+/* PX TO REM CONVERSION */
 $baseFontSizeInPixels : 16;
 @function rem($pixels, $context: $baseFontSizeInPixels) {
   @if (unitless($pixels)) { $pixels: $pixels * 1px; }
@@ -19,9 +20,8 @@ $baseFontSizeInPixels : 16;
   @return $pixels / $context * 1rem;
 }
 
-/***
- *  Fonts
- */
+
+/* FONTS */
 
 // Font styles - ToDo: Add project fonts.
 @mixin font($family, $weight: 'normal', $style: 'normal') {
@@ -49,9 +49,8 @@ $baseFontSizeInPixels : 16;
   }
 }
 
-/***
- *  Grid
- */
+
+/* GRID */
 
 // Grid Browser Compliance
 @mixin column-width($start, $end) {
@@ -108,9 +107,8 @@ $baseFontSizeInPixels : 16;
   }
 }
 
-/***
- *  Flexbox
- */
+
+/* FLEXBOX */
 
 // Wrapper for a flex grid - the arguments set the justification and the
 // starting breakpoint.
@@ -183,9 +181,8 @@ $baseFontSizeInPixels : 16;
   @content;
 }
 
-/***
- *  Decorative Elements
- */
+
+/* DECORATIVE ELEMENTS */
 
 // Background Images
 @mixin bg_image_setup {
@@ -224,9 +221,8 @@ $baseFontSizeInPixels : 16;
   }
 }
 
-/***
- *  Utilities
- */
+
+/* UTILITIES */
 
 // Accessibly hide
 @mixin hide() {
@@ -256,6 +252,5 @@ $baseFontSizeInPixels : 16;
   box-shadow: none;
 }
 
-/***
- *  Project unique
- */
+
+/* UNIQUE TO PROJECT */
