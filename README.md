@@ -1,6 +1,8 @@
 # ThinkBase - Grid
 A base theme for the Demos Drupal 8 site using CSS Grid Layout. 
-Requires Ruby to run locally. 
+Requires Ruby to run locally and the 
+[components](https://www.drupal.org/project/components) module to be added to 
+the project build.
 
 ## Setup
 - Update `Rakefile` to have the correct site path
