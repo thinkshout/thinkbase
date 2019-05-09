@@ -2,6 +2,6 @@ thinkbase:
   version: VERSION
   css:
     theme:
-      css/style.css: {}
+      css/style.prefixed.css: {}
   js:
     js/main-dist.js: {}
