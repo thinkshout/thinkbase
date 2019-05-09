@@ -61,20 +61,14 @@
 
 /* GRID */
 
-// Grid Browser Compliance
-@mixin column-width($start, $end) {
-  grid-column: #{$start} / #{$end};
-  -ms-grid-column: #{$start} / #{$end};
-}
-
 // Centers a column on the page
 @mixin center-columns($centered-columns, $total-columns) {
   @if($total-columns - $centered-columns == 0) {
-    @include column-width(1, $total-columns + 1);
+    grid-column: 1 / calc(#{$total-columns} + 1);
   } @else {
     $position-left: ($total-columns - $centered-columns)/2 + 1;
     $position-right: $position-left + $centered-columns;
-    @include column-width($position-left, $position-right);
+    grid-column: $position-left / $position-right;
   }
 }
 
